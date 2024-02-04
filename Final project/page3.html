@@ -1,0 +1,340 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>My First Webpage</title>
+  
+  <style type="text/css">
+  /*font imports*/
+  @import url('https://fonts.googleapis.com/css?family=cardo|Jose fin+Sans|Josefin+Slab');
+  
+  /*======================css reset============================*/
+  
+  /*http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License:non(public domain)
+  */
+  
+  html,body,div,span,applet,object,iframe,
+  h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+  a,abbr,acronym,address,big,cite,code,
+  del,dfn,em,img,ins,kbd,q,s,samp,
+  small,strike,strong,sub,sup,tt,var,
+  b,u,i,center,
+  dl,dt,dd,ol,ul,li,
+  fieldest,form,lable,legend,
+  table,caption,tbody,tfoot,thead,tr,th,td,
+  article,aside,canvas,details,embed,
+  figure,figcaption,footer,header,hgroup.
+  menu,nav,output,ruby,section,summary,
+  time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  }
+   /*HTML5 display-role reset for older browsers*/
+   article,aside,details,figcaption,figure,
+   footer,header,hgroup,menu,nav,section{
+   display:block;
+   }
+   body{
+   line-height:1;
+   }
+   ol,ul{
+   list-style:none;
+   }
+   blockquote,q{
+      quotes:none;
+   }
+   blockquote:before,blockquote:after,
+   q:before,q:after{
+   content:";
+   content:none;
+   }
+   table{
+      border-collapse:collapse;
+	  border-spacing:0;
+   }
+   /*==============END CSS RESET==================*/
+  
+  /*===============color scheme===================*/
+  /*
+  dust pink -#F4A8DB
+  black-#000000
+ dark grey-#5b5553
+  red orange-#C63756
+  lightest grey-#e5e5e5
+	medium grey-#bla7a5
+  */
+  
+   body{
+       background-color:#5b5553;
+		background-color:#5b5553;
+		background-image:url('fish.jpg');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:100% 100%;
+   }
+   
+   header{
+   background-color:white;
+   padding:3%;
+   }
+  #wrapper{
+     width:80.56640625%;/*825/1024*/
+	 margin:0 auto;
+	   background-color:#e5e5e5;
+  }
+  nav{
+	 margin:0 auto;
+	 padding:1% 0;
+	 background-color:#bla7a5;
+  }
+  nav ul{
+  width:85.57575757575758%;/*706/825*/
+  margin:0 auto;
+  }
+  
+  nav ul li{
+  display:inline;
+  margin-right:2%;
+  }
+  #feature{
+     width:81.32575757575758%;/*706/825*/
+	 margin:3% auto 4% auto;
+	 padding:1.5% 2.25% 3.5% 2.25%;
+	 background-color:white;
+	 overflow:hidden;
+  }
+  .feature-img{
+    float:left;
+	width:40%;
+  }
+  
+  #main-content{
+   width:59.39393939393939%; /*523/825*/
+	float:left;
+	margin:2%;
+  }
+  .main-figure{
+	width:32.50478011472275%;/*170/523*/
+	margin-right:9.56022944550669%;/*50/523*/
+	float:right;
+  }
+  
+  #sidebar{
+		width:32.60606060606061%;/*302/825*/
+		float:left;
+		margin:2%;
+  }
+  .side-figure{
+      width:88.0794701986755%;/*266/302*/
+	  margin:0 auto;
+	  padding:bottom:2%;
+  }
+  
+  
+  figure img{
+       max-width:100%;
+  
+  }
+  figur{
+     background-color:silver;
+  }
+  footer{
+    clear:left;
+	padding:2%;
+  }
+  /*============type styles==================*/
+  /*
+  font-family:'cardo',serif;
+  font-family:'Josefin Sans', sans-serif;
+  font-family:'Josefin Slab',serif;
+  */
+  
+  body{
+	 font-family:'cardo',serif;
+  }
+  
+  article>p{
+  	line-height:130%;
+  
+  }
+   .feature-text{
+    float:left;
+	width:58%;
+	margin-left:2%;
+	font-family:'Josefin Slab',serif;
+	font-size:1.3333em;
+	font-weight:bold;
+	line-height:125%;
+	letter-spacing: .05em;
+  }
+  h1,h2,h3,h4,h5,h6{
+  font-family:'Josefin Sans', sans-serif;
+  color:#C63756;
+  letter-spacing: .05em;
+  }
+  
+  h1{
+  font-size:2em;
+  font-weight:bold;
+  }
+  h2{
+  font-size:1.75em;
+  font-weight:bold;
+  }
+  
+ # feature h2{
+    margin-bottom:2%;
+  }
+  
+ nav>ul>li{
+ 
+ }
+ footer>p{
+	margin:0;
+ }
+  p{
+		margin:2.5% 0;
+  
+  }
+  figcaption{
+	font-family:'Josefin Slab',serif;
+	margin:3%;
+  }
+  #sidebar figcaption{
+	margin-bottom:3%;
+	
+  }
+  </style>
+  
+  
+  <!--[if It IE 9]>
+    <script src="
+	https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	</head>
+	
+	<body>
+	  <div id="wrapper">
+	  
+	       <header>
+		      <h1>sea animals</h1>
+		   </header>
+		   
+		    <nav>
+			   <ul>
+			     <li><a href="finalmulticolumn.html">page1</a></li>
+				  <li><a href="page2.html">page2</a></li>
+				   <li><a href="page4.html">page4</a></li>
+				    <li><a href="page5.html">page5</a></li>
+					 <li><a href="page6.html">page6</a></li>
+			   </ul>
+			</nav>
+			
+			<div id="feature">
+			<h2>When you hear sea animals what comes to your mind?</h2>
+			<p><a href="https://www.sciencedaily.com/news/plants_animals/sea_life/">sea animals</a></P>
+			  <img src="Sea-animals.jpg" class="feature-img"/>
+			  
+			  <p class="feature-text">
+				Due to their remarkable diversity of more than 230,000 species, sea animals play an essential role in nature’s delicate balance, making a key contribution to nutrient cycling, and recycling carbon and nitrogen, among other elements. For example, certain microscopic marine organisms like phytoplankton create most of the world’s oxygen through photosynthesis. Similarly, marine animals are an important source of protein for billions of people, particularly those who live in coastal areas. Likewise, they help maintain populations of prey species by countering an excess that would harm marine ecosystems. Moreover, unique biological compounds found in certain marine animals can benefit humanity’s health through the discovery of new drugs and therapies. Finally, the behaviour and migratory patterns of sea animals can signal environmental changes, and help scientists understand the health of the ocean.In sum, the diverse attributes of creatures that live in the sea means that their role in maintaining the ecological balance of the planet cannot be ignored.
+			 </p>
+			</div>
+			
+			<div id="main-content">
+			     <article>
+				   <h2>fish </h2>
+				    <figure class="main-figure">
+					<p><a href="https://www.nationalgeographic.com/animals/fish/">fish</a></P>
+					    <img src="fish2.jpg"/>
+						<figcaption>
+						   <p>nemo</p>
+						</figcaption>
+					</figure>
+				   <p>
+				    It’s well-known that edible fish are an important staple for people all over the world and play a major ecological role in balancing aquatic ecosystems. And with a relatively simple biological classification system that places more than 30,000 species of fish (class Pisces) in the phylum Chordata, which contains all Vertebrates and about three-quarters of all multicellular animal species, it doesn’t take much imagination to appreciate the enormity of this diversity and the plethora of evolved affinities that could benefit humans. Contemplating any one of these specific fish could lead to various notions about their unique beauty or affordability, nutritional value including high protein and much-cherished omega-3 fatty acids and hence benefit to humankind, social capital, commercial importance as a source of income and international relations, impact on the ocean’s biodiversity and planetary health, or even environmental sufficiency for sustaining human life on Earth. And making sure we can continue to reap the benefits of these creatures depends on practising sustainable fishing.
+                   </p>
+				   
+				   <p>
+					Among the dozens of edible fish, some are especially rich in omega-3 oil that can benefit the heart and the brain, such as salmon. Tuna is one of the most popular fish for the protein and vitamins it provides. Fish populations will flourish in great societies, or disappear from poor ones As the health of our oceans goes, so goes the health of the fish. overfishing will be inevitable – destroying habitat is much easier than sustaining fish stocks Industrial harvesting of marine life has introduced new threats to fish populations: overfishing, habitat destruction and the scattering of plastic waste in the water.
+
+				   </p>
+				   
+				   <p>
+				  Beyond their dietary and economic value, edible fish play a role in nutrient cycles and help control the populations of other prey species, thus underscoring their importance in maintaining rich biodiversity and healthy ecosystems. Conservation efforts, including the practice of sustainable fishing, as well as efforts to combat pollution and climate change, will all enhance marine nutrition and help keep our oceans healthy now and for future generations to come.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Lobsters</h2>
+				   <p><a href="https://www.britannica.com/animal/lobster">Lobsters</a></P>
+				   <p>
+				   Lobster is a critically important seafood with distinguishing physiology and flavour. There are several species of lobster, but the American lobster (Homarus americanus) and the European lobster (Homarus gammarus) are probably the most common, although there are several others, including rock lobsters and spiny lobsters. The lobster has a sweet and savoury flavour profile, and the juicy meat is very tender. The addition of butter, often melted, enhances the flavour of the meat, which is enjoyed around the world in a wide variety of recipes. Besides being a gastronomic delight, lobster supports many of the economic livelihoods of coastal communities and supports large industrial fishing operations and advanced aquaculture operations globally.
+				   </p>
+				   
+				   <p>
+				   Besides the obvious gastronomic considerations, lobsters are a keystone species – essential to the correct functioning of marine ecosystems. They are scavengers and predators helping to regulate undersea populations of other marine life. The delicate rhythm of their molting as they slash themselves out of exoskeletons to expand in the pursuit of growth all acts to illustrate the versatility and resilience of lobster life. Details of their intricate life cycle and their social habits, involving courtship rituals and hierarchical structures, are essential to those studying these strange creatures. Detecting and adapting to such features is crucial to developing conservation strategies to maintain healthy populations.
+
+				   </p>
+				   
+				   <p>
+				    It is important to develop responsible planning for maintaining stable lobster populations, as lobster habitats are being overfished and damaged. Lobsters are key indicators of the balance of marine ecosystems, and we protect and zipper up juvenile lobsters because we want to keep these seafood runs going strong. Coastal waterways and the livelihoods of many communities depend on it. Lobsters, as the poster child for seafood, are a key reason exactly why we need to keep our oceans and coastal ecosystems healthy. As consumers, buying from sustainable lobster fisheries and being mindful of our impact on marine ecosystems will help keep the world’s oceans and lobsters balanced.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>sharks</h2>
+				   <p><a href="https://www.livescience.com/shark-facts"> sharks</a></P>
+				   <p>
+				   Sharks are a diverse group of fish, among the oldest vertebrates, and found in nearly every ocean on Earth. They play a critical role in the functioning of marine ecosystems, contributing to the health and stability of our oceans. While not all shark species are edible, some are caught and consumed, including the spiny dogfish and mako shark, whose meat is considered tasty due to its flakiness. The body form of sharks, including their smooth skin, jointless skeleton and keen senses have enabled them to survive as an apex predator in the oceans for hundreds of millions of year. Even though sharks are an integral part of marine food webs, they face a growing conservation crisis owing to overfishing, habitat destruction and trade in shark fin soup.
+				   </p>
+				   
+				   <p>
+				   Sharks are a vital part of marine ecosystems, keeping them in balance. As the top predator, they help keep prey populations in check so that no species overbrowses other marine life. They also maintain the overall health and diversity of the ocean’s life. Furthermore, by eating sick or infected prey, they reduce the spread of disease and act as nature’s monitors to maintain the fitness of marine populations. Additionally, successful shark populations enhance fisheries, because healthy shark populations are more sustainable than those without.
+				   </p>
+				   
+				   <p>
+				    During the Mid Jurassic period, about 174 million years ago, the first sharks were fossilised. Since then, this group has diversified into more than 500 species, making them one of the most speciose cartilaginous vertebrate groups to date. That means they have a range of adaptations, from a whale shark filter-feeder to the small torpedo-shaped horn shark, which lurk on the sea floor and thrive off invertebrates. Today, the diversity is even more impressive, with notable ‘apex predators’ such as the streamlined great white shark (Carcharodon carcharias) – thought to have the most aerodynamic body of any fish in the water, enabling it to reach high speeds while tracking fast prey – and the filter-feeding female whale shark (Rhincodon typus), seen here in the Adriatic Sea diverting water through the sieve formed by its 5-ft (1.5m)-wide goneyard-style jaws. Conservationists focus on these famous and ecologically significant animals, and concern has now been raised for the whale shark’s wellbeing due to overfishing.
+				   </p>
+				  
+				 </article>
+			</div>
+			<div id="sidebar"> 
+			     <article>
+				   <h2>turtles</h2>
+				 <figure class="side-figure">
+				 <p><a href="https://www.nationalgeographic.com/animals/reptiles/facts/sea-turtles">turtles </a></P>
+					    <img src="turtles.jpg"/>
+						<figcaption>
+						   <p>turtles</p>
+						</figcaption>
+					</figure>
+				 <p> 
+				 They are a very ancient group of reptiles, with bony shells, slow ways, and with can accrue into traits that positively impact on ecological processes Turtles are also culturally important, and are eaten in some cultures. With the features of slow motion, a bone shell that does not limit as much as it helps, as well as highly evolved features that enable them to inhabit both terrestrial and aquatic environments, turtles have become very important to human life and culture, as Indigenous peoples have domesticated species for meat and hides, understanding that these animals help mitigate fire. It is no surprise, then, that turtles have served as eco • symbols since ancient times. The archival documents seem to suggest that turtles also served as eco•icons: specific symbols identified with an ecosystem for the duration of the environment’s flourishing. One function of eco tattoos, eco symbols and eco icons is as indicators of vital ecosystems. If similar examples across history and geographies are in part associated with ecological meanings, it becomes clear that the creature continues its resourceful evolution even on the human body.
+
+				 </p>
+			     <p> 
+					Turtles perform nutrient cycling tasks in these ecosystems. Turtles are top consumers, eating both aquatic plants and invertebrates, and play essential roles in keeping populations of these species within healthy bounds. Turtle nests also sculpt landscapes, both terrestrial and aquatic, through the eggs deposited in them, and often hatched far afield from where they were laid. In aquatic ecosystems, turtles that bask on shorelines can slow or halt the growth of algal blooms. And turtles feature in many human cultures around the world as symbols of longevity, wisdom and perseverance.
+				 </p>
+			    <p> 
+					With more than 350 species, turtles are incredibly diverse, each adapted to a particular habitat and lifestyle. The famous sea turtles migrate vast oceanic distances just to nest, while many freshwater turtles live in lakes, ponds and rivers, and come in a vast range of sizes, shapes, forms and behaviours. Many turtle species are threatened by habitat loss, pollution and the multibillion-dollar illegal pet and food trade, so the conservation and protection of turtles – of these relics of eras before early Dinosaurs – is key to ensuring the continuous existence of these wonderful and meaningful creatures. Turtles are part of our planet’s vast array of biodiversity, and maintaining the richness and complexity of the natural world requires conservation efforts to protect species like turtles. They are our stewards of biodiversity.
+				 </p>
+				 </article>
+			</div>
+			<footer>
+			  <p><small>sea animals</small></P>
+			</footer>
+	  </div>
+	  
+	</body>
+	</html>

@@ -1,0 +1,441 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>My First Webpage</title>
+  
+  <style type="text/css">
+  /*font imports*/
+  @import url('https://fonts.googleapis.com/css?family=cardo|Jose fin+Sans|Josefin+Slab');
+  
+  /*======================css reset============================*/
+  
+  /*http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License:non(public domain)
+  */
+  
+  html,body,div,span,applet,object,iframe,
+  h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+  a,abbr,acronym,address,big,cite,code,
+  del,dfn,em,img,ins,kbd,q,s,samp,
+  small,strike,strong,sub,sup,tt,var,
+  b,u,i,center,
+  dl,dt,dd,ol,ul,li,
+  fieldest,form,lable,legend,
+  table,caption,tbody,tfoot,thead,tr,th,td,
+  article,aside,canvas,details,embed,
+  figure,figcaption,footer,header,hgroup.
+  menu,nav,output,ruby,section,summary,
+  time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  }
+   /*HTML5 display-role reset for older browsers*/
+   article,aside,details,figcaption,figure,
+   footer,header,hgroup,menu,nav,section{
+   display:block;
+   }
+   body{
+   line-height:1;
+   }
+   ol,ul{
+   list-style:none;
+   }
+   blockquote,q{
+      quotes:none;
+   }
+   blockquote:before,blockquote:after,
+   q:before,q:after{
+   content:";
+   content:none;
+   }
+   table{
+      border-collapse:collapse;
+	  border-spacing:0;
+   }
+   /*==============END CSS RESET==================*/
+  
+  /*===============color scheme===================*/
+  /*
+  dust pink -#F4A8DB
+  black-#000000
+ dark grey-#5b5553
+  red orange-#C63756
+  lightest grey-#e5e5e5
+	medium grey-#bla7a5
+  */
+  
+   body{
+       background-color:#5b5553;
+		background-image:url('shadow.png');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:100% 100%;
+   }
+   
+   header{
+   background-color:white;
+   padding:3%;
+   }
+  #wrapper{
+     width:80.56640625%;/*825/1024*/
+	 margin:0 auto;
+	   background-color:#e5e5e5;
+  }
+  nav{
+	 margin:0 auto;
+	 padding:1% 0;
+	 background-color:#bla7a5;
+  }
+  nav ul{
+  width:85.57575757575758%;/*706/825*/
+  margin:0 auto;
+  }
+  
+  nav ul li{
+  display:inline;
+  margin-right:2%;
+  }
+  #feature{
+     width:81.32575757575758%;/*706/825*/
+	 margin:3% auto 4% auto;
+	 padding:1.5% 2.25% 3.5% 2.25%;
+	 background-color:white;
+	 overflow:hidden;
+  }
+  .feature-img{
+    float:left;
+	width:40%;
+  }
+  
+  #main-content{
+   width:59.39393939393939%; /*523/825*/
+	float:left;
+	margin:2%;
+  }
+  .main-figure{
+	width:32.50478011472275%;/*170/523*/
+	margin-right:9.56022944550669%;/*50/523*/
+	float:right;
+  }
+  
+  #sidebar{
+		width:32.60606060606061%;/*302/825*/
+		float:left;
+		margin:2%;
+  }
+  .side-figure{
+      width:88.0794701986755%;/*266/302*/
+	  margin:0 auto;
+	  padding:bottom:2%;
+  }
+  
+  
+  figure img{
+       max-width:100%;
+  
+  }
+  figur{
+     background-color:silver;
+  }
+  footer{
+    clear:left;
+	padding:2%;
+  }
+  /*============type styles==================*/
+  /*
+  font-family:'cardo',serif;
+  font-family:'Josefin Sans', sans-serif;
+  font-family:'Josefin Slab',serif;
+  */
+  
+  body{
+	 font-family:'cardo',serif;
+  }
+  
+  article>p{
+  	line-height:130%;
+  
+  }
+   .feature-text{
+    float:left;
+	width:58%;
+	margin-left:2%;
+	font-family:'Josefin Slab',serif;
+	font-size:1.3333em;
+	font-weight:bold;
+	line-height:125%;
+	letter-spacing: .05em;
+  }
+  h1,h2,h3,h4,h5,h6{
+  font-family:'Josefin Sans', sans-serif;
+  color:#C63756;
+  letter-spacing: .05em;
+  }
+  
+  h1{
+  font-size:2em;
+  font-weight:bold;
+  }
+  h2{
+  font-size:1.75em;
+  font-weight:bold;
+  }
+  
+ # feature h2{
+    margin-bottom:2%;
+  }
+  
+ nav>ul>li{
+ 
+ }
+ footer>p{
+	margin:0;
+ }
+  p{
+		margin:2.5% 0;
+  
+  }
+  figcaption{
+	font-family:'Josefin Slab',serif;
+	margin:3%;
+  }
+  #sidebar figcaption{
+	margin-bottom:3%;
+	
+  }
+  ul{
+	list-style-type:disc;
+    color:black;
+  }
+  
+  ol{
+	list-style-type:decimal;
+	color:black;
+  }
+  
+  table,caption{
+     background-color:navy;
+	margin:1%;
+	padding:0 auto:
+  }  
+ 
+  thead,tfoot{
+    background-color:silver;
+	margin:1%;
+	padding:0 auto
+  }
+  tbody{
+     background-color:skyblue;
+	margin:1%;
+	padding:0 auto
+  }
+  caption{
+    color:silver;
+	margin:1%;
+	padding:0 auto
+  }
+  td{
+	font-family:sans-serif;
+	margin:1%;
+	padding:0 auto
+  }
+  </style>
+  
+  
+  <!--[if It IE 9]>
+    <script src="
+	https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	</head>
+	
+	<body>
+	  <div id="wrapper">
+	  
+	       <header>
+		      <h1>Welcome to My Website</h1>
+		   </header>
+		   
+		    <nav>
+			   <ul>
+			     <li><a href="page2.html">page2</a></li>
+				  <li><a href="page3.html">page3</a></li>
+				   <li><a href="page4.html">page4</a></li>
+				    <li><a href="page5.html">page5</a></li>
+					 <li><a href="page6.html">page6</a></li>
+			   </ul>
+			</nav>
+			<article>
+			<h2>Tables!</h2>
+			<table>
+			   <caption>Table stuff</caption>
+			   <thead>
+				  <tr>
+						<th>header 1</th>
+						<th>header 2</th>
+						<th>header 3</th>
+						<th>header 4</th>
+					
+				  </tr>
+			   
+			   </thead>
+			   
+			   <tfoot>
+					<tr>
+						<td>header 1</td>
+						<td>header 2</td>
+						<td>header 3</td>
+						<td>header 4</td>
+					</tr>
+			   </tfoot>
+			   
+			   <tbody>
+					<tr>
+						<td>data 1</td>
+						<td>data 2</td>
+						<td>data 3</td>
+						<td>data 4</td>
+					</tr>
+					
+					<tr>
+						<td>data 1</td>
+						<td>data 2</td>
+						<td>data 3</td>
+						<td>data 4</td>
+					</tr>
+			   </tbody>
+			</table>
+			
+			</article>
+			<div id="feature">
+			<h2>Why do we need Animals in our planet?</h2>
+			
+			<h3>types of Animals</h3>
+			    <ul>
+					<li>Mammals</li>
+					<li>Birds</li>
+					<li>Reptiles</li>
+					 <li>Amphibians</li>
+					 <li>nvertebrates</li>
+					   <li>sea Animals</li>
+				</ul>
+				<h3>different kind of Animals</h3>
+					<ol>
+					  <li>1.lion</li>
+					</ol>
+					<ol>
+					   <li>2.Dogs</li>
+					</ol>
+					<ol>
+					  <li>3.Bears</li>
+					</ol>
+					<ol>
+					  <li>4.Dolphins</li>
+					</ol>
+					<ol>
+					   <li>5.fish</li>
+					</ol>
+				
+			<p><a href="https://www.earthreminder.com/importance-of-animals-to-humans-and-environment/"> Importance of Animals to Humans and Environment</a></P>
+			  <img src="Animals.jpg" class="feature-img"/>
+			  
+			  <p class="feature-text">
+			   Animals are essential to our planet’s ecosystem functions as ecological keystones, pollinators and early-warning systems of environmental health that maintain biodiversity and food chains, provide insights to scientific research in genetics and behaviour, and serve as companions and emotional support. The loss, due to the extinction crisis and the ever-expanding trade in private pets and exotic animals, of these diverse contributors, who occupy a critical place in the symphony of life, would strip away a vital strand from the rich and beautiful fabric of nature that supports life on Earth. The continuation of life as we know it depends on respecting the intrinsic values of animals in an interconnected and interdependent world.
+			 </p>
+			</div>
+			
+			<div id="main-content">
+			     <article>
+				   <h2>birds</h2>
+				    <figure class="main-figure">
+					<p><a href="https://www.britannica.com/animal/bird-animal">bird</a></P>
+					    <img src="bird.jpg"/>
+						<figcaption>
+						   <p>birds</p>
+						</figcaption>
+					</figure>
+				   <p>
+				   It should come as no surprise, then, that birds play an important role in the ecology of the planet. Specifically, their pest-control services are invaluable. An enormous number of birds eat insects, from swallows and sparrows in our backyards to many species with diets specific to insects. They keep local populations of insect pests under control, preventing runaway outbreaks that could devastate crops. So while we often think of birds in terms of adorable songbirds, their natural pest-control activities are a global service; with insects estimated to cause more than $70 billion in crop damage, and with pesticides having known health risks, birds perform a valuable service that helps to keep the agricultural world on track, without resorting to dangerous chemicals. Birds are also major pollinators for plants. The hummingbird pollinating the purple-bloomed coral is an obvious example, while larger birds are the primary pollinators for many fruit trees and strawberries and other fruit-bearing bush species.
+
+				   </p>
+				   
+				  In addition to the fact that birds play keystone roles in ecological processes such as pollination, pest control and predation, birds are cultural currency, inspirations for art, poetry, stories and spirituality around the world. Birds and birdwatching are economically vital, bringing revenue into local economies in every corner of the world. They’re waste disposers and seed dispersers, essential to the maintenance and flourishing of diverse ecosystems. And that’s just the tip of a remarkably diverse iceberg; the snowy owl, a magnificent ‘nightjar’, a petite ‘hummingbird’, the magnificent ‘toucan’ – these birds inhabit the far extremes and bring great keystone benefits to freezing Arctic lands and tropical, lush forests alike.
+				   </p>
+				   
+				   <p>
+				   Neither does it downplay the fact that some bird species actually help keep humans healthy, by hunting rodents and insects that can carry disease. The fact that birds are now generally acknowledged for their roles in such vastly different ways, from eco-maintenance and culture to disease management, simply reiterates the irreplaceable crucial nature of their roles in the sheer complexity of life on Earth. To continue learning about new bird species, and the roles to which they can put to use, should of necessity spur conservation efforts to eternally sustain the benefits that birds offer to our own planet.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Reptiles</h2>
+				   <p><a href="https://www.britannica.com/animal/reptile">Reptiles </a></P>
+				   <p>
+				   Reptiles – a unparalleled remarkably diverse group of more than 10,000 species – contribute to our planet’s ecological balance and overall wellbeing in important ways. A primary contribution of reptiles to human life is pest control. Snakes help regulate rodents, thereby preventing crop damage and possibly reducing the spread of diseases to humans that these rodent pests can carry. Some lizard species also help control the numbers of pest insects that can harm crops and other vegetation. Reptiles’ natural pest-control services help ensure the sustainability of agriculture, and also reduce the need for harmful chemical pesticides.
+				   </p>
+				   
+				   <p>
+				   But these things can still be important in terms of nutrient cycling and ecosystem function. For example, turtles are scavengers that help keep waterways clean by eating carrion, the dead remains of other animals, for instance. By eating dead things, turtles and other scavenging predators can help ensure that nutrients vital to the organisms in a system get reused as rapidly as possible, keeping the system’s production lines high. And they can often help stop the spread of diseases by carrying away the potentially harmful remnants of dead larger animals. Second, reptiles can serve as critical prey items in ecosystems, aiding predators and functioning as links in ecosystems that can facilitate food webs. Ecosystems are only as large and diverse as the organisms living in them. Without vertebrates and other prey species, ecosystems can lose diverse food webs and the functions associated with them. For example, many animals rely on reptiles for their daily rummages through the undergrowth, consuming insects and lower-level herbivores.
+				   </p>
+				   
+				   <p>
+				   The incredible diversity of reptiles, from the cold-blooded sexiness of crocodiles in wetlands to the darting lizardry of geckos in deserts, bespeaks a territorial spread that is true to life. Many reptiles navigate a range of ecosystems, from wet to dry and from desaline to freshwater, from mountains to swamps and everything in between. From ancient elongated forms of the crocodilans to lizard-like anoles, reptiles evolved as arch terrestrial creatures and nostrils of the land. The wholescale value of reptiles for life on Earth cannot be overstated. Any protection and preservation of key reptilian groups would do a world of good not only for the intrinsic value of life but for the value of life for life.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Amphibians</h2>
+				   <p><a href="https://www.livescience.com/animals/amphibians">Amphibians </a></P>
+				   <p>
+				   From frogs to salamanders, there are more than 7,000 known species of amphibians in the world today that perform vital ecosystem services. Many amphibians are prolific insectivores, helping to curb populations of disease-vectored pest species. They also keep insect populations in check, reducing the need for chemical pesticides around farms. By controlling insect populations, amphibians play a key role in the provision of ecosystem services supporting agricultural producers. Additional ecosystem services that amphibians provide include acting as bioindicators, where they relay information about the sensitivity of a habitat or water quality to changes in the environment. Their importance as sentinels comes from their biological sensitivity, and this can be forewarning of larger issues related to the environment that affect other species, including humans.
+				   </p>
+				   
+				   <p>
+				   Further emerging medical applications add another layer to their niche-filling roles in ecosystems. Compounds in skin secretions of frogs have antimicrobial properties that have been used as a basis for antibiotics. Immunological investigations on amphibians have revealed important insights for treatment of human disease. Amphibian breeding biology with its aquatic and terrestrial stages often alternating are important model systems for developmental biology. The connection between amphibians and health is intrinsic and this serves as an additional reason to keep populations.
+				   </p>
+				   
+				   <p>
+				    The species richness of amphibians ranges from the colourful tropical poison dart frogs to the highly crypto-morphic temperate salamanders. Amphibians help support ecosystem health through their nutrient recycling, serving both as predator and as prey. Many amphibian species are under threat due to habitat loss, pollution and emerging infectious diseases. Protecting amphibians and their habitats is critical to maintaining the unique and diverse contributions to global ecosystems, and the associated health benefits for humans.
+				   </p>
+				  
+				 </article>
+			</div>
+			<div id="sidebar"> 
+			     <article>
+				   <h2> Invertebrates</h2>
+				 <figure class="side-figure">
+					    <img src="butterfly2.jpg"/>
+						<p><a href="https://www.britannica.com/animal/invertebrate">Invertebrates </a></P>
+						<figcaption>
+						   <p>butterflies</p>
+						</figcaption>
+					</figure>
+				 <p> 
+				 Invertebrates are a highly diverse group, making up more than 95 per cent of all named animal species on Earth, and play a vital and indispensable role in the functioning of ecosystems worldwide. They are important ecosystem contributors. Invertebrates pollinate plants, perform nutrient cycling and decomposition, break down organic compounds into smaller units, recycle nutrients back into the soil and into other living organisms, and are a part of the food web, both feeding on and being eaten by other organisms. They help provide pollination and seed dispersal functions, ensuring that the sexual reproduction of flowering plants can occur efficiently, including many crops grown to feed humans. Insects, such as bees, butterflies and flies, are vital pollinators of flowering plants, including most food crops and around three-quarters of the world’s food production. Their pollination services are essential to agriculture. Invertebrates are vital in helping nutrient recycling and decomposition of organic matter (such as vegetation, animal carcasses, poop, and other decaying waste) to be recycled back into soil.
+				 </p>
+				 
+			     <p>
+				 Insects and invertebrates are also important for their role as the foundation of food webs – they are an important source of food for a large number of vertebrates, such as birds, mammals and amphibians. The entire suite of interactions show that invertebrates play a crucial role in maintaining biodiversity and help to keep ecosystems in good shape, and they play a role in the economy – for example, silkworms produce silk and bees produce honey. In addition, insects decompose waste and aerate soil, thus improving soil quality and the productivity of plants growing in terrestrial ecosystems.
+				 </p>
+			    <p> 
+				With somewhere between six and 30 million extant and yet undescribed species of invertebrates, subject only to the outer limits of our imagination when it comes to form and function, you could be excused for thinking their range was limited to a life only in water, leaving land to the vertebrates. That’s only because an earth-shattering event, 541 million years ago, paved the way for invertebrates to diversify into pretty much any ecological niche imaginable, including on land. Despite lacking a backbone, invertebrates encompass far more than just species you’d summon for a team with the catchiest name at the cockroach races. And yet, they represent the workhorse that drives countless ecological functions and processes and are the life-blood for human societies up and down the food chains. While we see the magnificence and splendour of these simple creatures in close-ups, we often appreciate their brilliance and beauty in the simplest form. Yet, a little closer examination will reveal they are key components for ecosystem health and performance. It is time to ensure we achieve that.
+				</p>
+				 </article>
+			</div>
+			<footer>
+			  <p><small>Animals</small></P>
+			</footer>
+	  </div>
+	  
+	</body>
+	</html>

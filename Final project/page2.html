@@ -1,0 +1,339 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>My First Webpage</title>
+  
+  <style type="text/css">
+  /*font imports*/
+  @import url('https://fonts.googleapis.com/css?family=cardo|Jose fin+Sans|Josefin+Slab');
+  
+  /*======================css reset============================*/
+  
+  /*http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License:non(public domain)
+  */
+  
+  html,body,div,span,applet,object,iframe,
+  h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+  a,abbr,acronym,address,big,cite,code,
+  del,dfn,em,img,ins,kbd,q,s,samp,
+  small,strike,strong,sub,sup,tt,var,
+  b,u,i,center,
+  dl,dt,dd,ol,ul,li,
+  fieldest,form,lable,legend,
+  table,caption,tbody,tfoot,thead,tr,th,td,
+  article,aside,canvas,details,embed,
+  figure,figcaption,footer,header,hgroup.
+  menu,nav,output,ruby,section,summary,
+  time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  }
+   /*HTML5 display-role reset for older browsers*/
+   article,aside,details,figcaption,figure,
+   footer,header,hgroup,menu,nav,section{
+   display:block;
+   }
+   body{
+   line-height:1;
+   }
+   ol,ul{
+   list-style:none;
+   }
+   blockquote,q{
+      quotes:none;
+   }
+   blockquote:before,blockquote:after,
+   q:before,q:after{
+   content:";
+   content:none;
+   }
+   table{
+      border-collapse:collapse;
+	  border-spacing:0;
+   }
+   /*==============END CSS RESET==================*/
+  
+  /*===============color scheme===================*/
+  /*
+  dust pink -#F4A8DB
+  black-#000000
+ dark grey-#5b5553
+  red orange-#C63756
+  lightest grey-#e5e5e5
+	medium grey-#bla7a5
+  */
+  
+   body{
+       background-color:#5b5553;
+    background-color:#5b5553;
+		background-image:url('mammals2.png');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:100% 100%;
+   }
+   
+   header{
+   background-color:white;
+   padding:3%;
+   }
+  #wrapper{
+     width:80.56640625%;/*825/1024*/
+	 margin:0 auto;
+	   background-color:#e5e5e5;
+  }
+  nav{
+	 margin:0 auto;
+	 padding:1% 0;
+	 background-color:#bla7a5;
+  }
+  nav ul{
+  width:85.57575757575758%;/*706/825*/
+  margin:0 auto;
+  }
+  
+  nav ul li{
+  display:inline;
+  margin-right:2%;
+  }
+  #feature{
+     width:81.32575757575758%;/*706/825*/
+	 margin:3% auto 4% auto;
+	 padding:1.5% 2.25% 3.5% 2.25%;
+	 background-color:white;
+	 overflow:hidden;
+  }
+  .feature-img{
+    float:left;
+	width:40%;
+  }
+  
+  #main-content{
+   width:59.39393939393939%; /*523/825*/
+	float:left;
+	margin:2%;
+  }
+  .main-figure{
+	width:32.50478011472275%;/*170/523*/
+	margin-right:9.56022944550669%;/*50/523*/
+	float:right;
+  }
+  
+  #sidebar{
+		width:32.60606060606061%;/*302/825*/
+		float:left;
+		margin:2%;
+  }
+  .side-figure{
+      width:88.0794701986755%;/*266/302*/
+	  margin:0 auto;
+	  padding:bottom:2%;
+  }
+  
+  
+  figure img{
+       max-width:100%;
+  
+  }
+  figur{
+     background-color:silver;
+  }
+  footer{
+    clear:left;
+	padding:2%;
+  }
+  /*============type styles==================*/
+  /*
+  font-family:'cardo',serif;
+  font-family:'Josefin Sans', sans-serif;
+  font-family:'Josefin Slab',serif;
+  */
+  
+  body{
+	 font-family:'cardo',serif;
+  }
+  
+  article>p{
+  	line-height:130%;
+  
+  }
+   .feature-text{
+    float:left;
+	width:58%;
+	margin-left:2%;
+	font-family:'Josefin Slab',serif;
+	font-size:1.3333em;
+	font-weight:bold;
+	line-height:125%;
+	letter-spacing: .05em;
+  }
+  h1,h2,h3,h4,h5,h6{
+  font-family:'Josefin Sans', sans-serif;
+  color:#C63756;
+  letter-spacing: .05em;
+  }
+  
+  h1{
+  font-size:2em;
+  font-weight:bold;
+  }
+  h2{
+  font-size:1.75em;
+  font-weight:bold;
+  }
+  
+ # feature h2{
+    margin-bottom:2%;
+  }
+  
+ nav>ul>li{
+ 
+ }
+ footer>p{
+	margin:0;
+ }
+  p{
+		margin:2.5% 0;
+  
+  }
+  figcaption{
+	font-family:'Josefin Slab',serif;
+	margin:3%;
+  }
+  #sidebar figcaption{
+	margin-bottom:3%;
+	
+  }
+  </style>
+  
+  
+  <!--[if It IE 9]>
+    <script src="
+	https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	</head>
+	
+	<body>
+	  <div id="wrapper">
+	  
+	       <header>
+		      <h1>differant types of mammals</h1>
+		   </header>
+		   
+		    <nav>
+			   <ul>
+			     <li><a href="finalmulticolumn.html">page1</a></li>
+				  <li><a href="page3.html">page3</a></li>
+				   <li><a href="page4.html">page4</a></li>
+				    <li><a href="page5.html">page5</a></li>
+					 <li><a href="page6.html">page6</a></li>
+			   </ul>
+			</nav>
+			
+			<div id="feature">
+			<h2> Mammals</h2>
+			<p><a href="https://www.nationalgeographic.com/animals/mammals/"> mammals</a></P>
+			  <img src="Mammals.jpg" class="feature-img"/>
+			  
+			  <p class="feature-text">
+			   Mammals are the critical foundation of ecosystem services and they also offer invaluable services directly to human societies. There are more than 6,000 species of mammals on Earth and we depend on them for functions ranging from seed dispersal, pollination and regulation of mesopredators. People can also find food, materials and medicines thanks to mammals. Their evolutionary adaptability ranges from the aerial acrobatics of bats to the monumental migrations of whales. The network of interactions spanned by mammals underlines the unparalleled role they play in sustaining global biodiversity and in facilitating human well-being. The conservation of mammals is critical for preserving the ecological functions and diverse services they offer on Earth.
+			 </p>
+			</div>
+			
+			<div id="main-content">
+			     <article>
+				   <h2>Dolphins’</h2>
+				    <figure class="main-figure">
+					<p><a href="https://www.thoughtco.com/facts-about-dolphins-129800">Dolphins</a></P>
+					    <img src="dolphin.jpg"/>
+						<figcaption>
+						   <p>dolphin</p>
+						</figcaption>
+					</figure>
+				   <p>
+				   For over a century, dolphins, one of the most sociable mammals on Earth, have captivated and intrigued the human species. Dolphins are thought to be among the most intelligent creatures on Earth due to their well-developed brains, distinctive ways of living, and rich, cultural lives. Dolphins belong to a family of large aquatic mammals called cetaceans: aquatic animals with streamlined bodies, dorsal fins and the ability to use sound. However, few animals meet this definition better than the bottlenose dolphin (Tursiops truncates) and killer whale or orca (Orcinus orca). They are among the most well-known dolphins and are charismatic and mysterious ocean creatures. Dolphins are, of course, found all over the globe but are most closely connected to the Indian, Atlantic and Pacific Oceans, as well as the Mediterranean Sea. They live in densely populated groups called pods, where they engage in playful and endearing behaviour such as leaping into the air, swimming in tight circles and gently touching their snouts to one another. They also use a sonar ability known as echolocation to navigate, locate prey and communicate with one another.
+
+				   </p>
+				   
+				   <p>
+				   Dolphins’ ecological significance is not limited to their compelling behaviours. As apex predators, they regulate the populations of their prey, preventing overgrazing by herbivores to help maintain healthy oceanic food webs. Their ‘faecal plumes’, or wet spots left by defecation, comprise nutrients that enrich the sea and influence where various marine organisms live and cluster. Dolphins are also indicators of oceanic health: where dolphins are doing well, so is their home. And dolphins are a cultural connection between us and the sea. Dolphins inspire marine tourism, provide coastal economies with opportunities for employment and income generation, and they more generally spark appreciation for marine conservation and the natural world.
+				   <p>
+				   There are almost 90 known species of dolphins, that mould themselves to different marine habitats, from the sweetness of the bottlenose, throwing dancing fountains of water at people in boats, to the mighty orca, or killer whale – the largest of the dolphins – with its operating habits, social hierarchies, feeding proclivities and its rich and colourful life. Dolphins keep oceans healthy and contribute literally billions of dollars to the economy and culture of many countries. All this attests to our responsibility to conserve these mammals and their habitats, not just for a thriving marine life, but also for our own sustenance.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Bears</h2>
+				   <p><a href="https://www.nationalgeographic.com/animals/mammals/facts/bears-grizzly-polar-panda"> Bears</a></P>
+				   <p>
+				   Bears (of the mammalian order Carnivora), with their grizzled looks and ecological importance, are one of nature’s most charismatic species. Most of them, with their ubiquitous physiques, front-facing claws, and sense of smell, have become exceptionally well-adapted to their many environments worldwide. Take the manner in which this majestic creature has somehow learnt to hibernate over millions of years. Your average living brown bear, like all species of bear apart from polar bears, voluntarily enters a state of torpor during the winter in order to conserve energy when food is tough to find. This adaptation helps them get by in a harsh environment. A grizzly bear standing by a stream in Grand Teton National Park, Wyoming, 2005. Photo by Charles Howes/Minden PicturesThen, of course, try to understand the vastly diverse dietary behaviours that exist from one bear species to another. Some, like brown bears, are decidedly omnivorous, feasting on plants and animal matter alike. Others, such as the giant pandas, are largely herbivorous and feed on bamboo.
+
+				   </p>
+				   
+				   <p>
+				   From an ecological perspective, bears serve vital functions for ecosystem health. As keystone species, their influence on prey numbers helps to regulate populations, their foraging brings order to vegetation, and their role as seed dispersers brings order and diversity to the defecation of fruits and berries. The ecosystem-balancing role of apex predators – such as bears – helps to control herbivore populations, which in turn impacts the distribution of plant communities and preventing overgrazing. Wherever bears still live, people tend to relate their presence to healthy, intact ecosystems. In addition, bears have particular resonance for many indigenous communities and feature prominently in cultural traditions in folklore, because they symbolise strength, knowledge and unity with the land.
+
+				   </p>
+				   
+				   <p>
+				   Eight distinct species of the bear, each with its own habitat and characteristics, are globally recognised: the polar bear in the ice-packed Arctic; the grizzly in its North American forests; and the rest scattered around the world. In fact, each kind of bear thrives in a particular environment - but not always. Conservation of bears is important because of the role it plays in upholding biodiversity and the integrity of ecosystems. Human-caused activities, such as destruction of the habitat or climate change, threatens bear habitats. The protection of their habitats, mitigating human-animal conflicts, education, and creating awareness about these magnificent mammals are the pillars of conservation efforts, striving to preserve bears as a significant constituent of the ecological equilibrium of our planet
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Kangaroos</h2>
+				   <p><a href="https://www.britannica.com/animal/kangaroo"> Kangaroos</a></P>
+				   <p>
+				   Kangaroos (Macropodidae), charismatic marsupial species native to Australia, are found in nearly every ecological niche available in the continent. Given that each species feeds on a distinctive combination of resources, kangaroos have evolved a body plan well-suited for their specialised needs. Kangaroo hindfeet are large and ballistic, a specialisation built upon the foundational anatomy of upright locomotion, a trait shared with sloths and anteaters. All kangaroos possess muscular, prehensile tails that facilitate and enhance their method of travel. In a sexually dimorphic design, males are often heavily muscled and females are comparatively smaller. Like other species of Australian marsupials, kangaroos give birth to underdeveloped young, called joeys, which complete their development in a pouch. This unique reproductive strategy, known as a ‘live-bearing’ mammal, allows for great adaptability, particularly if the mother comes across a new feeding area; in this situation, joeys can continue to grow externally while the mother searches for higher quality resources.
+				   </p>
+				   
+				   <p>
+				    Kangaroos ecologically are also important for the function and formation of landscapes in Australia. They are herbivorous animals and therefore, like other herbivores, shape the distribution and structure of vegetation through grazing. Through consuming plants, kangaroos contribute to nutrient cycling and, through excretion, they also play a role in shifting the composition of plants in the environment through seed distribution that are rich in nutrients and can regenerate plant communities. Moreover, their breeding strategy contributes to their versatility in adapting to changing environmental conditions. Economically, kangaroos also become a source of development through their meat and skin (mainly kangaroo leather and fur), fuel (mainly as heating material due to cattle poisoning), and as herbivores, through their use in maintenance and development of lands and mines. Culturally, kangaroos become a significant cultural symbol and representation of Australia in a Western context. Kangaroos embody a type of wildlife distinct to Australia and, in many ways, embody the spirit of Australia.
+				   </p>
+				   
+				   <p>
+				   Within kangaroo taxonomy, there are four recognised species: red kangaroo (Osphranus erythropus), eastern grey kangaroo (Macropus giganteus), western grey kangaroo (Macropus fuliginosus), and antilopine kangaroo (Macropus antilopinus). They also differ in body size, behaviour and their preferences for their habitats. Conservation of kangaroos is an important issue, and they may face challenges from various factors such as habitat loss, human population expansion, conflict with livestock, overhunting and human-wildlife interactions. Sustainable use and conservation programs must be considered to help maintain healthy kangaroo populations and their ecological roles and contributions within the diverse ecosystems of Australia.
+				   </p>
+				  
+				 </article>
+			</div>
+			<div id="sidebar"> 
+			     <article>
+				   <h2>King of Jungle</h2>
+				 <figure class="side-figure">
+				 <p><a href="https://cbs.umn.edu/lion-research-center/all-about-lions"> lion</a></P>
+					    <img src="lion.webp"/>
+						<figcaption>
+						   <p>lion</p>
+						</figcaption>
+					</figure>
+				 <p> 
+				 Lions, often called the ‘king of the jungle’, are fierce and large cats that belong to the Felidae family. Although lions are unique creatures, they hold a crucial ecological role by shaping the pattern of natural ecosystems. These large carnivores are characterised by their robust body, long whiskers and sickle-shaped claws. They also have manes in male lions. As apex predators, lions play an important role in ecosystem health by maintaining a balance between prey species. They regulate herbivore population, preventing overgrazing and balancing the number of animals. Lions show cooperative hunting behaviour and cooperation in raising young within a pride. They establish territories and communicate by calling to members of the group through airborne sound.
+				 </p>
+			     <p> 
+				 To the broader category of biodiversity, lions are flagship species, they generate public interest and inspire support for conservation Also, the ecosystem functions that lions provide through their actions contribute their own measure of value. Tourism around seeing lions puts money into local economies, offering a benefit of keeping ecosystems intact and worth visiting rather than degraded or busy with development. Lions help control the populations of other large herbivores so, in a second-hand way, lions assist in keeping farmers’ fields from being overgrazed by keeping out enormous numbers of other grazers that would damage crops and change local ecosystems. If lions are built into the story of a place – whether wild or semi-wild — with their brawny charisma, then conservation of lions will be part of the mix, and their wild life will likely be worth hanging on to.
+
+				 </p>
+			    <p> 
+				The range of diversity seen in the more than 6,000 mammalian species worldwide – from the flight capabilities of bats to the aquatic prowess of the dolphin – is mind-boggling in a very real sense. It is a well-accepted argument that these various species of mammals contribute to the functioning of ecosystems in highly diverse ways – with ways that we are only beginning to unravel. They pollinate plants and help to disperse their seeds, as well as unique roles in nutrient cycling. They are also a source of cultural enrichment for human societies, showing up in our art, folklore and mythology. And the list goes on. If ever there was an à la carte set menu, the kingdom Mammalia is it. Such great diversity of any type (and I shan’t even get into the further ramifications of the argument) shows us just how complex life on Earth is and the value of those species that we need to, and want to, conserve.
+				 </p>
+				 </article>
+			</div>
+			<footer>
+			  <p><small> types of mammals</small></P>
+			</footer>
+	  </div>
+	  
+	</body>
+	</html>

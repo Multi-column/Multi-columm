@@ -1,0 +1,339 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>My First Webpage</title>
+  
+  <style type="text/css">
+  /*font imports*/
+  @import url('https://fonts.googleapis.com/css?family=cardo|Jose fin+Sans|Josefin+Slab');
+  
+  /*======================css reset============================*/
+  
+  /*http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License:non(public domain)
+  */
+  
+  html,body,div,span,applet,object,iframe,
+  h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+  a,abbr,acronym,address,big,cite,code,
+  del,dfn,em,img,ins,kbd,q,s,samp,
+  small,strike,strong,sub,sup,tt,var,
+  b,u,i,center,
+  dl,dt,dd,ol,ul,li,
+  fieldest,form,lable,legend,
+  table,caption,tbody,tfoot,thead,tr,th,td,
+  article,aside,canvas,details,embed,
+  figure,figcaption,footer,header,hgroup.
+  menu,nav,output,ruby,section,summary,
+  time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  }
+   /*HTML5 display-role reset for older browsers*/
+   article,aside,details,figcaption,figure,
+   footer,header,hgroup,menu,nav,section{
+   display:block;
+   }
+   body{
+   line-height:1;
+   }
+   ol,ul{
+   list-style:none;
+   }
+   blockquote,q{
+      quotes:none;
+   }
+   blockquote:before,blockquote:after,
+   q:before,q:after{
+   content:";
+   content:none;
+   }
+   table{
+      border-collapse:collapse;
+	  border-spacing:0;
+   }
+   /*==============END CSS RESET==================*/
+  
+  /*===============color scheme===================*/
+  /*
+  dust pink -#F4A8DB
+  black-#000000
+ dark grey-#5b5553
+  red orange-#C63756
+  lightest grey-#e5e5e5
+	medium grey-#bla7a5
+  */
+  
+   body{
+       background-color:#5b5553;
+		background-color:#5b5553;
+		background-image:url('goat.webp');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:100% 100%;
+   }
+   
+   header{
+   background-color:white;
+   padding:3%;
+   }
+  #wrapper{
+     width:80.56640625%;/*825/1024*/
+	 margin:0 auto;
+	   background-color:#e5e5e5;
+  }
+  nav{
+	 margin:0 auto;
+	 padding:1% 0;
+	 background-color:#bla7a5;
+  }
+  nav ul{
+  width:85.57575757575758%;/*706/825*/
+  margin:0 auto;
+  }
+  
+  nav ul li{
+  display:inline;
+  margin-right:2%;
+  }
+  #feature{
+     width:81.32575757575758%;/*706/825*/
+	 margin:3% auto 4% auto;
+	 padding:1.5% 2.25% 3.5% 2.25%;
+	 background-color:white;
+	 overflow:hidden;
+  }
+  .feature-img{
+    float:left;
+	width:40%;
+  }
+  
+  #main-content{
+   width:59.39393939393939%; /*523/825*/
+	float:left;
+	margin:2%;
+  }
+  .main-figure{
+	width:32.50478011472275%;/*170/523*/
+	margin-right:9.56022944550669%;/*50/523*/
+	float:right;
+  }
+  
+  #sidebar{
+		width:32.60606060606061%;/*302/825*/
+		float:left;
+		margin:2%;
+  }
+  .side-figure{
+      width:88.0794701986755%;/*266/302*/
+	  margin:0 auto;
+	  padding:bottom:2%;
+  }
+  
+  
+  figure img{
+       max-width:100%;
+  
+  }
+  figur{
+     background-color:silver;
+  }
+  footer{
+    clear:left;
+	padding:2%;
+  }
+  /*============type styles==================*/
+  /*
+  font-family:'cardo',serif;
+  font-family:'Josefin Sans', sans-serif;
+  font-family:'Josefin Slab',serif;
+  */
+  
+  body{
+	 font-family:'cardo',serif;
+  }
+  
+  article>p{
+  	line-height:130%;
+  
+  }
+   .feature-text{
+    float:left;
+	width:58%;
+	margin-left:2%;
+	font-family:'Josefin Slab',serif;
+	font-size:1.3333em;
+	font-weight:bold;
+	line-height:125%;
+	letter-spacing: .05em;
+  }
+  h1,h2,h3,h4,h5,h6{
+  font-family:'Josefin Sans', sans-serif;
+  color:#C63756;
+  letter-spacing: .05em;
+  }
+  
+  h1{
+  font-size:2em;
+  font-weight:bold;
+  }
+  h2{
+  font-size:1.75em;
+  font-weight:bold;
+  }
+  
+ # feature h2{
+    margin-bottom:2%;
+  }
+  
+ nav>ul>li{
+ 
+ }
+ footer>p{
+	margin:0;
+ }
+  p{
+		margin:2.5% 0;
+  
+  }
+  figcaption{
+	font-family:'Josefin Slab',serif;
+	margin:3%;
+  }
+  #sidebar figcaption{
+	margin-bottom:3%;
+	
+  }
+  </style>
+  
+  
+  <!--[if It IE 9]>
+    <script src="
+	https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	</head>
+	
+	<body>
+	  <div id="wrapper">
+	  
+	       <header>
+		      <h1>Donestic Animals</h1>
+		   </header>
+		   
+		    <nav>
+			   <ul>
+			     <li><a href="finalmulticolumn.html">page1</a></li>
+				  <li><a href="page2.html">page2</a></li>
+				   <li><a href="page3.html">page3</a></li>
+				    <li><a href="page4.html">page4</a></li>
+					 <li><a href="page6.html">page6</a></li>
+			   </ul>
+			</nav>
+			
+			<div id="feature">
+			<h2>How Animals help us</h2>
+			<p><a href="https://www.globalgiving.org/learn/ways-animals-help-us/"> help that we get from Animals</a></P>
+			  <img src="horses.jpg" class="feature-img"/>
+			  
+			  <p class="feature-text">
+			   Domestic animals, including those that live with us, those that produce food, and working animals, are immensely valuable to society and the environment. The animals that mother us and keep us company are beloved pets – dogs, cats, fish, birds, bunnies. The animals that live outside with us, herding our sheep, guarding our cattle, protecting our flocks of turkeys, guarding our homes, are also valuable to us in many ways. The animals that work with us to produce food not only supply much of our food, meat, milk and eggs. They work; horses pulling ploughs, oxen moving logs. The variety of animals living with us is immense: there are now more than one billion cattle on the earth; many more than five billion chickens, and perhaps another billion dogs and another billion cats. Each breed is a product of our selective breeding throughout the past few millennia for specific purposes. The world of domestic animals describes our life – the way animals live and work with us, but also the way they help and companion us. Our relationship to animals is perhaps the most important human relationship, the source of almost all of our civilisations; agriculture, cities, states, populations, entertainment. Just our dogs, cats, chickens are huge in number: billions each, each being useful in many different ways. But in each instance, the welfare and the ultimate importance of the animals depends on the essential conscientious keeping of domestic animals.
+			 </p>
+			</div>
+			
+			<div id="main-content">
+			     <article>
+				   <h2>cows</h2>
+				    <figure class="main-figure">
+					<p><a href="https://www.theguardian.com/environment/2017/oct/30/secret-life-of-cows-loving-intelligent-kind-eat-them">cow</a></P>
+					    <img src="cow.webp"/>
+						<figcaption>
+						   <p>adorable cows</p>
+						</figcaption>
+					</figure>
+				   <p>
+				   Cows are peaceful animals that play a vital role in human society not just because they are a major part of agriculture, but because they significantly influence the Earth as a whole. Throughout the world, people rely on cows for much of their food. These creatures are iconic and symbolic of agriculture because of their ruminant digestive system and the fact that they can convert grass and plant fibres into meat and dairy, which in turn sustains many human lives. Cows are internationally recognised for turning plants such as grass into high-energy foods like milk and meat. Cows’ farming practices help human environmental sustainability. Regularly grazing in pastures instead of large wheat fields, these peace-loving animals keep our planet healthy by eating invasive plants and keeping ecosystems in balance.
+				   </p>
+				   
+				   <p>
+				    Cows have a broader role than just in feeding our people still – they are also a critical part of nutrient-cycling, where their manure returns nutrients from croplands to the soil, according to Buchanan-Smith. Their dairy production helps provide one-third of the world’s milk products, significantly contributing to nutrient diversification and food security. ‘Milk and dairy products are nearly calorie-for-calorie the same as your standard grains, and by having the cattle, we are able to provide this,’ Buchanan-Smith told me. ‘Different cattle breeds are unique in ways beyond milk or meat production: just compare dairy Holsteins churning out three times as much milk as beef Angus cows. Then there are versatile dual-purpose breeds, like the Hereford.’ Cow breeds are also a reflection of people’s migration over time, with some breeds presumably following prehistoric hunters and gatherers as they made their way across Eurasia and into North America.
+				   </p>
+				   
+				   <p>
+				   Even so, I do not want to downplay their many good points. Not only do they contribute to a low-impact food system, but if properly managed, with good sustainable practices, taking into account their climate impact via emissions of methane, and ensuring high reproduction, high survival of calves from farms and ensuring good welfare, then we and our planet can benefit from them, much like we benefit from apples, either eaten or as pomace in all the other products made from them. In sum, cows serve as a paradigm for an integrated view of agriculture and nutrition in relation to a sustainable food system and habitat.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Sheep</h2>
+				   <p><a href="https://www.britannica.com/animal/domesticated-sheep"> Sheep</a></P>
+				   <p>
+				   So it goes with sheep. In many ways, they’re the perfect domesticated animal. Gentle and easy to control, sheep are hugely adaptable and central to human civilisation and planetary health alike. Woolly, herbivorous and great producers of wool, meat and milk, their wool resource remains the world’s longest continuously used fibre, a renewable, sustainable resource that has been used in textiles for thousands of years, keeping people warm and comfortable. Sheep are ruminant animals, whose four-compartment stomachs enable them to efficiently use fibrous plant materials that many other animals cannot ingest, let alone digest. They are a vital part of pasture ecosystems, knitting themselves into the very landscape by preventing overgrazing and dominance of grasslands by certain species, while also encouraging biodiversity.
+				   </p>
+				   
+				   <p>
+				   Finally, sheep are essential to sustainable agriculture. As a grazing animal, sheep are a central component of maintaining healthy pastures and fostering biodiversity by controlling grass height, and in doing so they discourage the propagation of weedy plant species that thrive in ungrazed pastures. In turn, their fertiliser leaves nutrients in the land, where crops can use them to flourish. The range of sheep varieties testifies to the diverse needs of humans for animals that are adapted to very different climatic conditions and are raised for different purposes. Fine-wool Merino sheep thrive in cooler climates, while hardier breeds adapted for meat production, such as Dorper or Dorset, are particularly suitable for warmer climates. Dairy sheep like East Friesian can be used to produce milk, while meat sheep such as Suffolk are raised for mutton.
+				   </p>
+				   
+				   <p>
+				   Good and equitable husbandry is essential for the pastoral and applied care of sheep to safeguard their welfare and to minimise environmental impacts associated with livestock pastoralism. The key elements to sustainable management include genetic improvement and rotational grazing schedules. The human-animal relationship is intricate, but in all instances sheep enrich the lives of people and benefit the world. Sheep are emblematic of the complex relationships that take place between agriculture, ecology and resource utilisation, and for this reason are such a valuable resource in shaping human societies as well as contributing to the health of our planet.
+				   </p>
+				  
+				 </article>
+				 
+				  <article>
+				   <h2>Hen</h2>
+				   <p><a href="https://livestock.extension.wisc.edu/articles/life-cycle-of-a-laying-hen/"> Hen</a></P>
+				   <p>
+				    All over the world, human societies depend on domesticated female chickens (commonly called hens) to meet a vast assortment of needs and display a commendable spirit of responsible resource use. Marked by a familiar vocalisation and scratching behaviour, a recognisable social structure and a variety of ecological interactions, hens are hard-working producers of eggs and meat. Their ability to control pests (by clearing insects and weeds) and their role in pest management (as they keep down mole populations, thereby preventing molehills that can upend vegetable crops) dispense with other chemical and agricultural interventions. Equally, their versatility across climates and management systems means that hens fit well in many agricultural settings across the globe and can reach all kinds of communities.
+
+				   </p>
+				   
+				   <p>
+				    More importantly, the production of eggs that are part of their reproductive activities play a huge part in the welfare of the planet. Eggs, high in protein and of high nutritional worth, contribute to global food security. Poultry manure, being high in nutrients, helps to enhance crop production, reduce the use of synthetic fertilisers, and the cycle is perpetuated further when the poultry feed crops are consumed. Hens are often found on sustainable, free-range systems, in which they perform natural behaviours such as dust baths and scratching, which are beneficial for their welfare as well as for the ecology of the agricultural ecosystem.
+				   </p>
+				   
+				   <p>
+				   There are hundreds of hens breeds for a variety of purposes. Layers (egg-producing breeds such as the Leghorn) are selectively bred for especially high efficiency in egg production; dual-purpose breeds (eggs and meat, such as the Rhode Island Red) are a common standard for home breeding and small flocks; and heritage breeds (eggs and meat, such as the Plymouth Rock, emphasise history of American agriculture and genetic diversity) adapt to varied climates and management. The diversity of genetics and animal husbandry showcases the adaptive, enduring value of hens for pastoral systems, sustainable agriculture and responsible farming practices. Hens fulfil the promise of agriculture to humans: nutritious food, ecological balance, a healthy environment; and the promise of hens to human impacts: workers, the young and the old, find valuable employment; and to environmental well-being, providing nurturing space for wildlife where hens are shade, trees, fallen fruit to roam and scavenge. The hens’ fortunate place in human societies and the health of our planet reflect the threefold needs – from health to plants, animals and land – and threefold gifts – enhancing health, offering sustenance, and cultivating environmental well-being.
+				   </p>
+				  
+				 </article>
+			</div>
+			<div id="sidebar"> 
+			     <article>
+				   <h2>turkey</h2>
+				 <figure class="side-figure">
+				 <p><a href="https://www.allaboutbirds.org/guide/Wild_Turkey/overview"> turkey</a></P>
+					    <img src="turkey.jpg"/>
+						<figcaption>
+						   <p>turkey</p>
+						</figcaption>
+					</figure>
+				 <p> 
+				 Friendly, deceived turkeys would then loiter around the camp, allowing hunters to quickly spear them in the morning The physical appearance of turkeys is striking: bald heads, wattled necks and iridescent grey and bronze plumage. Turkeys are typical of a class of animals throughout the world that have both a wild and a domesticated form, and are the fourth most important food poultry worldwide. Wild turkeys perform highly social and extraordinarily adaptive behaviours, from elaborate lekking displays to group roosting. Wild turkeys may or may not have lived in the Americas and possibly adopted Old World turkeys, so this group might well have been one of the first nonhuman animals brought to humans by animals themselves. Domesticated turkeys have been bred for meat, which they provide to human societies across the globe as a sustainable source of protein that promotes food security and nutrition.
+
+				 </p>
+			     <p> 
+				  What’s more, they’re important to life on this planet for their own ecological services – such as reducing the pest insect population, dispensing seeds through their poop as they forage, and (yes) controlling ticks so we can enjoy outdoors without fear of having our lives ruined by Lyme. Mechanisms differ slightly between wild and domestic turkeys, but these birds certainly earn their ecological keep. But, of course, turkeys are also important because we eat them. A human being’s appetite is a thing of beauty, but also an omnivore’s appetite. Hence, there’s a dizzying variety of turkeys curated for human consumption. While some types are eaten only by the adventurous, the most common turkey today is the Broad Breasted White, bred and selected primarily for its prodigious meat production. To the contrary, the Heritage breeds – such as the Bourbon Red or the Narragansett – are prized for their genetic diversity and historical authenticity, as if to underscore the many other ways they differ from today’s dominant industrial turkey. These varieties reflect an astonishing assortment of ecological traits that make them fit for particular farming systems and consumer appetites.
+				 </p>
+			    <p> 
+				  As many responsible and sustainable turkey farming practices exist, such as the use of rotational grazing, ethical breeding, humane living quarters, and healthy access to nourishment and hygiene, all of which favour the general wellbeing of the animals, the environment and the management thereof. In conclusion, it emerges that turkeys symbolise more than human agriculture, biodiversity and cuisine, as they are deeply entwined in all these practices. Not only are turkeys an integral part of the human diet, but they demonstrate the delicate balance that exists between various ecosystems and human societies.
+				 </p>
+				 </article>
+			</div>
+			<footer>
+			  <p><small>Donestic Animals</small></P>
+			</footer>
+	  </div>
+	  
+	</body>
+	</html>
